@@ -1,16 +1,27 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEditor;
+using System.IO;
 
 public class SelectFile : MonoBehaviour {
-
-	// Use this for initialization
-	void Start () {
-		
-	}
 	
-	// Update is called once per frame
-	void Update () {
-		
+	void Start ()
+    {
+           
 	}
+
+    void Update()
+    {
+
+    }
+
+    public void ButtonClick()
+    {
+        string[] files = Directory.GetFiles(".");
+        
+        void dispFilesOnButtons(string filename, int idx, int shift) {
+
+        }
+    }
 }
