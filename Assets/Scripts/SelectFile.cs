@@ -18,10 +18,12 @@ public class SelectFile : MonoBehaviour {
 
     public void ButtonClick()
     {
-        string[] files = Directory.GetFiles(".");
+        private string[] files = Directory.GetFiles(".");
         
-        void dispFilesOnButtons(string filename, int idx, int shift) {
-
+        private void dispFilesOnButtons(string filename, int idx, int shift) {
+            int pos = idx - shift;
+            GameObject work = GameObject.Find("Button" + pos.ToString() + "Text");
+            
         }
     }
 }
